@@ -1,8 +1,19 @@
 import React from "react";
-import "./App.css";
+import Testimonial from "./components/Testimonial";
+import reviews from "./data";
 
 function App() {
-  return <h2>hi,</h2>;
+  return (
+    <div>
+      <div>
+        <h1>Our Testimonials</h1>
+        <div></div>
+        <div>
+          <Testimonial reviews={reviews} />
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default App;
